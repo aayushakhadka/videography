@@ -117,9 +117,11 @@ export const Peoplesays = () => {
             <div className="grid laptop1:grid-cols-3 mobileS:grid-cols-1 tablet:grid-cols-2 ">
               {peoplesays?.map((p, index) => {
                 return (
-                  <div key={index}>
+                  <div key={index} data-aos="zoom-in"
+                  data-aos-duration="1500" >
                     {/* <div className=" grid mobileL:pl-[2rem] laptop:pl-[0] mobileS:items-center mobileS:justify-center laptop1:grid-cols-3  mobileS:grid-cols-1 tablet:grid-cols-2 tablet:gap-[1.5rem] laptop1:gap-4 pb-[4rem]"> */}
-                    <div className="flex flex-col items-center justify-center mt-[3rem] ml-[1rem] relative border-[3px] border-white rounded-[1rem]">
+                    <div className="flex flex-col items-center justify-center mt-[3rem] ml-[1rem] relative border-[3px] border-white rounded-[1rem]" 
+                     >
                       <img
                         className="h-[5rem] w-[5rem] absolute z-[1000] top-[-2.5rem] border-[3px] border-white rounded-full"
                         src={p?.profile}
@@ -147,6 +149,7 @@ export const Peoplesays = () => {
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen
+                      
                       ></iframe>
                     </div>
 

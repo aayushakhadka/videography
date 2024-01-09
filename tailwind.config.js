@@ -18,6 +18,7 @@ module.exports = {
       backgroundImage: {
         camera: "url('./images/camera.jpg')",
         image: "url('./images/image.avif')",
+        loading:"url('./images/loading.gif')",
       },
 
       animation: {
