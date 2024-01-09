@@ -72,7 +72,7 @@ function ImageSlider({ data, setCurrentIndex }) {
         {data.map((p, index) => {
           return (
             <div key={index} className="border-gray-300 pb-[4rem]">
-              <div className="grid tablet:grid-cols-3 mobileL:grid-cols-2  mobileS:grid-cols-1 gap-4 ml-[1rem] mr-[1rem] relative ">
+              <div className="grid tablet:grid-cols-3 mobileL:grid-cols-2 gap-4 ml-[1rem] mr-[1rem] relative ">
                 {p?.images?.map((i, index) => {
                   return (
                       <div className=" group relative overflow-hidden  ">

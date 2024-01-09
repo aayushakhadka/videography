@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MdOutlineSmartphone } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { BiLogoGmail } from "react-icons/bi";
@@ -58,6 +58,26 @@ export const Hireme = () => {
     const value = event.target.value;
     setFormData({ ...formData, [name]: value });
   };
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+
+      const scrollThreshold = 400;
+
+      if (scrollTop > scrollThreshold) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div id="hireme" >
@@ -68,7 +88,7 @@ export const Hireme = () => {
         {/* TODO: map part */}
         <div className="flex-[1]">
           <div className="flex flex-col flex-[1] ">
-            <h1 className="text-white font-display text-3xl pt-[4rem]">
+            <h1 className="text-white font-display text-3xl pt-[4rem] ">
               HIRE ME
             </h1>
             <div className="border-2 border-red-700 w-[10%]"></div>
@@ -98,8 +118,8 @@ export const Hireme = () => {
         </div>
 
         {/* TODO: form part */}
-        <div className="flex-[1] max-w-lg  ">
-          <div className="tablet:mt-[4rem] mobileS:mt-[2rem]  flex flex-[1] max-h-[50rem]  flex-col bg-gray-50 bg-center gap-2 rounded-2xl  p-5 pb-[2rem] shadow-md">
+        <div className="flex-[1] max-w-lg">
+          <div className="tablet:mt-[4rem] mobileS:mt-[2rem] flex flex-[1] max-h-[50rem] flex-col bg-gray-50 gap-2 rounded-2xl p-5 pb-[2rem] shadow-md flex-wrap">
             <h1 className="text-black font-custom text-3xl pt-[1rem] font-display">
               Hello Friends!
             </h1>
@@ -168,14 +188,24 @@ export const Hireme = () => {
               >
                 Send Us
               </button>
+              
           </div>
+         
         </div>
+       
       </div>
+      {isVisible && (
+      <div className="items-end justify-end pr-[1rem] pb-[1rem] fixed bottom-16 right-0 mobileM:hidden mobileL:hidden mobileS:hidden tablet:flex ">
+        <a href='#home'>
+            <span className="text-white flex items-center justify-center h-[4rem] w-[4rem] bg-black rounded-[1rem] animate-bounce"><IoIosArrowUp className="h-[2rem] w-[2rem] roun"/></span>
+            </a>
+</div>
+ )}
       </div>
       </div> 
+      
 
-
-      <div className="mobilexl:flex tablet:flex-row mobileS:flex-col items-center justify-between mobileL:w-[80%] mx-auto min-h-[4rem] mobileS:pb-[5rem] tablet:pb-[0rem] font-display">
+      <div className="mobilexl:flex tablet:flex-row mobileS:flex-col items-center justify-between mobileL:w-[80%] tablet:w-[80%] mx-auto min-h-[4rem] mobileS:pb-[5rem] tablet:pb-[0rem] font-display">
         <p className="text-black min-w-[25rem] flex items-center gap-3 mobileS:pl-[1rem] mobileM:pl-[3rem] tablet:pl-[0rem]">
           Designed & Developed By
           <a className=" " target="_blank" href="https://apptechnologies.co/">
