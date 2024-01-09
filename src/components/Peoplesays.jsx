@@ -4,6 +4,7 @@ import peoplesays from "../data/Peoplesays";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
 import Slider from "react-slick";
+import ReactPlayer from "react-player";
 
 export const Peoplesays = () => {
   const settings = {
@@ -64,13 +65,14 @@ export const Peoplesays = () => {
               return (
                 <div key={index}>
                   {/* <div className=" grid mobileL:pl-[2rem] laptop:pl-[0] mobileS:items-center mobileS:justify-center laptop1:grid-cols-3  mobileS:grid-cols-1 tablet:grid-cols-2 tablet:gap-[1.5rem] laptop1:gap-4 pb-[4rem]"> */}
-                  <div className="p-5 mr-5 laptop1:mr-2 mobileL:ml-12 tablet:ml-2 flex flex-col items-center justify-center mt-[3rem] max-w-[30rem] min-h-[20rem] mobileS:ml-3  rounded-xl group relative transition duration-100 border-[3px] border-white bg-white ">
+                  <div className="flex flex-col items-center justify-center mt-[3rem] ml-[1rem] relative border-[3px] border-white rounded-[1rem]"
+                   >
                     <img
                       className="h-[5rem] w-[5rem] absolute z-[1000] top-[-2.5rem]"
                       src={p?.profile}
                     />
 
-                    <p className="text-black mt-5 tracking-tight font-display ">
+                    {/* <p className="text-black mt-5 tracking-tight font-display ">
                       {p?.description}
                       <p className="text-black pt-[1rem] font-semibold font-display">
                         - {p?.name}
@@ -78,7 +80,14 @@ export const Peoplesays = () => {
                       <p className="gap-1 flex items-center font-display">
                         <MdOutlineLocationOn /> {p?.location}
                       </p>
-                    </p>
+                    </p> */}
+                    {/* <video autoPlay loop muted >
+                <source src="https://youtu.be/CrWvAgp9Jlk?si=ClEts_iAhalt5vj9" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video> */}
+              <div className=" rounded-[1rem] border-4">
+<ReactPlayer className='rounded-[1rem]' height={300} width={380} url={p?.src}/>
+</div>
 
                     <div className="flex justify-between items-center"></div>
                   </div>

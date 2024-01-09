@@ -14,6 +14,7 @@ const peoplesays = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit odio ante, id dapibus elit condimentum vitae. Maecenas eget orci vitae enim accumsan mollis.",
     profile: "https://solverwp.com/demo/react/mingrand/assets/img/author/3.png",
     location: "Lalitpur",
+    src: "https://youtu.be/CrWvAgp9Jlk?si=mCsHmp489qkriUTi",
     name: "Ayusha Khadka",
   },
   {
@@ -21,18 +22,14 @@ const peoplesays = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit odio ante, id dapibus elit condimentum vitae. Maecenas eget orci vitae enim accumsan mollis.",
     profile: "https://solverwp.com/demo/react/mingrand/assets/img/author/3.png",
     location: "Lalitpur",
+    src: "https://youtu.be/CrWvAgp9Jlk?si=mCsHmp489qkriUTi1",
     name: "Ayusha Khadka",
   },
   {
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit odio ante, id dapibus elit condimentum vitae. Maecenas eget orci vitae enim accumsan mollis.",
     profile: "https://solverwp.com/demo/react/mingrand/assets/img/author/3.png",
-    location: "Lalitpur",
-    name: "Ayusha Khadka",
-  }, {
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit odio ante, id dapibus elit condimentum vitae. Maecenas eget orci vitae enim accumsan mollis.",
-    profile: "https://solverwp.com/demo/react/mingrand/assets/img/author/3.png",
+    src:"https://youtu.be/CrWvAgp9Jlk?si=mCsHmp489qkriUTi",
     location: "Lalitpur",
     name: "Ayusha Khadka",
   },

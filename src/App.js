@@ -6,9 +6,15 @@ import { Project } from "./components/projects/Project";
 import { Peoplesays } from "./components/Peoplesays";
 import { Hireme } from "./components/Hireme/Hireme";
 import {Faqs} from './components/Faqs'
+import AOS from "aos";
+import { useEffect } from "react";
 
 
 function App() {
+    useEffect(() => {
+      AOS.init();
+      AOS.refresh();
+    }, []);
   return (
     <div className='overflow-x-hidden'>
       <Home/>

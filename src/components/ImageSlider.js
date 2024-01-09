@@ -9,9 +9,31 @@ import project from "../data/Project";
 import { useRef, useState } from "react";
 import { MdArrowBack } from "react-icons/md";
 import { MdArrowForward } from "react-icons/md";
+import image1 from '../images/flim3.jpg'
 
 function ImageSlider({ data, setCurrentIndex }) {
-  const [showPopup, setShowPopup] = useState(false);
+  
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    'http://localhost:3000/static/media/flim1.c662ca7d5f4e8cfc890f.jpg',
+    'http://localhost:3000/static/media/films-2.a6e1eae06e1dd242bfd8.jpg',
+    'http://localhost:3000/static/media/flim3.eb604e46070d7e34285b.jpg',
+    'http://localhost:3000/static/media/flims4.840c19cca610cc7ae278.jpg',
+    'http://localhost:3000/static/media/films-5.4c5af65c190ede741a4b.jpg',
+    'http://localhost:3000/static/media/films-6.3b74e3a75b687ceef622.jpg',
+
+    
+    // Add more image URLs as needed
+  ];
+
+  const handleImageClick = (index) => {
+    setSelectedImage(index);
+  };
+
+  const closePopup = () => {
+    setSelectedImage(null);
+  };
 
   const settings = {
     dots: false,
@@ -58,10 +80,21 @@ function ImageSlider({ data, setCurrentIndex }) {
                         key={index}
                         className="max-h-[23rem] w-full aspect-square object-cover group-hover:scale-125 duration-200 group-hover:opacity-70 group-hover  "
                         src={i?.img}
-                        alt=""
-                        onClick={() => setShowPopup(true)}
+                   alt={`Image ${index}`}
+            onClick={() => handleImageClick(index)}
                         
                       />
+                     {/* {selectedImage !== null && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div className="absolute inset-0 bg-black opacity-75"></div>
+          <div className="z-50 bg-white p-4 rounded-lg">
+            <img src={images[selectedImage]} alt={`Popup Image ${selectedImage}`} />
+            <button className="mt-2 py-1 px-2 bg-gray-300 hover:bg-gray-400 rounded-md" onClick={closePopup}>
+              Close
+            </button>
+          </div>
+        </div> */}
+      {/* )} */}
                       <div className=" absolute z-[1000]  top-[50%] left-[50%] translate-x-[-50%] ">
                         <h1 className="text-white text-2xl font-display hidden group-hover:block ">{i?.title}</h1>
                         <p className="text-md font-light text-center font-display text-white hidden group-hover:block">{i?.description}</p>

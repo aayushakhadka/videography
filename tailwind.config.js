@@ -17,7 +17,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         camera: "url('./images/camera.jpg')",
-        image: "url('./images/image.webp')",
+        image: "url('./images/image.avif')",
       },
 
       animation: {

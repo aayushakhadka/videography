@@ -61,9 +61,10 @@ export const Hireme = () => {
 
   return (
     <div id="hireme" >
-      <div className="bg-neutral-700">     
+      <div className="bg-image bg-cover bg-opacity-30">
+        <div className="bg-black bg-opacity-70">    
 
-      <div className="w-[80vw] mx-auto min-h-[100vh] flex tablet:flex-row mobileS:flex-col gap-5 pb-[3rem] ">
+      <div className="w-[80vw] mx-auto min-h-[100vh] flex items-center justify-center tablet:flex-row mobileS:flex-col gap-5 pb-[3rem] ">
         {/* TODO: map part */}
         <div className="flex-[1]">
           <div className="flex flex-col flex-[1] ">
@@ -91,22 +92,22 @@ export const Hireme = () => {
             </h1>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.920389353642!2d85.35767477492246!3d27.688855326307824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1a23ff53c6c1%3A0xbf154d5bf0abe0ba!2sPepsicola!5e0!3m2!1sen!2snp!4v1702606292007!5m2!1sen!2snp"
-              className="min-h-[15rem] max-w-[32rem] rounded-md"
+              className="min-h-[15.5rem] max-w-[40rem] rounded-md"
             ></iframe>
           </div>
         </div>
 
         {/* TODO: form part */}
         <div className="flex-[1] max-w-lg  ">
-          <div className="tablet:mt-[4rem] mobileS:mt-[2rem]  flex flex-[1] max-h-[50rem]  flex-col bg-gray-50 bg-center gap-2 rounded-2xl  p-5 pb-[2rem]">
+          <div className="tablet:mt-[4rem] mobileS:mt-[2rem]  flex flex-[1] max-h-[50rem]  flex-col bg-gray-50 bg-center gap-2 rounded-2xl  p-5 pb-[2rem] shadow-md">
             <h1 className="text-black font-custom text-3xl pt-[1rem] font-display">
               Hello Friends!
             </h1>
-            <p className=" font-thin pb-[1rem] font-display">
+            <p className="pb-[1rem] font-display">
               Enter your details and start your journey with us
             </p>
               <input
-                className="h-[3rem] border-gray-700 rounded-md pl-[1rem] bg-gray-300 text-left pt-[] "
+                className="h-[3rem] border-[1px] border-gray-300 rounded-[1rem] pl-[1rem] bg-gray-300 bg-opacity-30 text-left pt-[] shadow-md"
                 type="text"
                 placeholder="Name"
                 name="name"
@@ -119,8 +120,9 @@ export const Hireme = () => {
                   </span>
                 )}
 
+
               <input
-                className="h-[3rem] border-gray-700 rounded-md pl-[1rem] bg-gray-300 mt-[0.5rem] "
+                className="h-[3rem] border-[1px] border-gray-300 rounded-[1rem] pl-[1rem] bg-gray-300 mt-[0.5rem] bg-opacity-30 shadow-md "
                 type="text"
                 placeholder="Email"
                 name="email"
@@ -147,7 +149,7 @@ export const Hireme = () => {
                 </span>
               )} */}
               <input
-                className="h-[10rem] border-[1px] border-gary-700 rounded-md pl-[1rem] bg-gray-300  pb-[7rem] mt-[0.5rem]"
+                className="h-[10rem] border-[1px] border-gray-300 rounded-[1rem] pl-[1rem] bg-gray-300  pb-[7rem] mt-[0.5rem] bg-opacity-30 shadow-md "
                 type="text"
                 placeholder="Message"
                 onChange={handleChange}
@@ -162,7 +164,7 @@ export const Hireme = () => {
 
               <button
                 onClick={validateForm}
-                className="bg-black text-white h-[3rem] mt-[0.5rem] rounded-md font-display"
+                className="bg-black text-white h-[3rem] mt-[1rem] rounded-[1rem] font-display"
               >
                 Send Us
               </button>
@@ -170,6 +172,7 @@ export const Hireme = () => {
         </div>
       </div>
       </div>
+      </div> 
 
 
       <div className="mobilexl:flex tablet:flex-row mobileS:flex-col items-center justify-between mobileL:w-[80%] mx-auto min-h-[4rem] mobileS:pb-[5rem] tablet:pb-[0rem] font-display">

@@ -3,7 +3,7 @@ import Layout from "./layout/Layout";
 
 export const Nav = () => {
   return (
-    <div className="tablet:flex gap-10 font-display tracking-tight items-end justify-end mobiles: hidden">
+    <div className="tablet:flex gap-10 font-display tracking-tight items-end justify-end mobiles: hidden ">
       <a href={"#home"}>
         <h1 className="text-white text-xl hover:opacity-80">Home </h1>
       </a>

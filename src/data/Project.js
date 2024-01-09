@@ -16,24 +16,28 @@ const project = [
         title: "The concert",
         description:'Short Flim',
         img: image1,
+        image:image1,
         link: undefined,
       },
       {
         title: "Cast Your Shell",
         description:'Feature-Length Flim',
         img: image2,
+        image:image2,
         link: undefined,
       },
       {
         title: "This Last Laugh",
         description:'Short Flim',
         img: image3,
+        image:image3,
         link: undefined,
       },
       {
         title: "Afternoon",
         description:'Serial Flim',
         img: image4,
+        image:image4,
         link: undefined,
       },
       {

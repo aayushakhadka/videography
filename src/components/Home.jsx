@@ -28,7 +28,7 @@ export const Home = () => {
 
               <div className="absolute z-10 top-[1%] mobileS:flex mobileS:flex-col right-[10%] left-[10%]">
 
-              <div className=" flex items-center mobileS:pt-[5rem] laptop1:pt-[3rem] laptop:pt-[3rem] flex-[1] pb-[2rem] ">
+              <div className=" flex items-center mobileS:pt-[5rem] laptop1:pt-[2rem] laptop:pt-[1rem] flex-[1] pb-[2rem] ">
                 <img className='pl-[0rem] h-[10rem]' src="https://placeholderlogo.com/img/placeholder-logo-3.png" />
                 <div className="flex-[2]">
               <Nav/>

@@ -17,22 +17,25 @@ export const Faqs = () => {
           <div className="border-2 border-red-700 w-[5%] mb-12"></div>
           <div className="pb-[4rem]">
             {faqs.map((faq, index) => (
-              <div className="flex flex-col gap-6 font-display">
-                <div key={index} className="border rounded mb-2 pt-4">
+              <div className="flex flex-col gap-6 font-display"
+             >
+                <div key={index} className="border border-gray-300 rounded-md mb-4 p-5 pt-4 shadow-md  ">
                   <div
-                    className="flex justify-between items-center p-4 pt-4"
+                    className="flex justify-between items-center px-4 pt-2 rounded-[1rem]"
                     onClick={() => handleClick(index)}
+                   
                   >
-                    <h2 className="text-lg font-medium">{faq?.question}</h2>
+                    <h2 className="text-lg font-display font-semibold">{faq?.question}</h2>
 
                     {activeIndex === index ? (
-                      <MdKeyboardArrowDown size={25} />
-                    ) : (
                       <MdKeyboardArrowUp size={25} />
+                    
+                    ) : (
+                      <MdKeyboardArrowDown size={25} />
                     )}
                   </div>
                   {activeIndex === index && (
-                    <div className="p-4">{faq?.question}</div>
+                    <div className="p-2 px-4">{faq?.answer}</div>
                   )}
                 </div>
               </div>
