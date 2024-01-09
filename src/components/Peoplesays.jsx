@@ -144,7 +144,7 @@ export const Peoplesays = () => {
                         width="100%"
                         height="315"
                         className="rounded-[1rem]"
-                        src="https://www.youtube.com/embed/CrWvAgp9Jlk?si=ln086gua9PBgp8iL"
+                        src={p?.src}
                         title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

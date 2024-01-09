@@ -60,8 +60,7 @@ export const Home = () => {
                   <div className="flex gap-10 mobileS:pt-[1rem] mobileS:flex-col mobileM:flex-row mobileM:pt-[3rem]">
                     <a href={"#projects"}>
                       <button className="bg-white border-zinc-700 text-black border-[1px] h-[3rem] w-[10rem] font-display hover:bg-transparent hover:text-white"
-                       data-aos="fade-right"
-                       data-aos-duration="1500">
+                      >
                         VIEW PROJECTS
                       </button>
                     </a>
@@ -70,8 +69,7 @@ export const Home = () => {
                       href={"#hireme"}
                     >
                       <button className="text-white border-[1px] border-zinc-700 h-[3rem] w-[10rem] font-display hover:bg-white hover:text-black"
-                       data-aos="fade-left"
-                       data-aos-duration="1500">
+                       >
                         HIRE ME
                       </button>
                     </a>
