@@ -47,6 +47,19 @@ function ImageSlider({ data, setCurrentIndex }) {
       setCurrentIndex(index);
     },
   };
+  const multiSettings = {
+    // Multi-browse carousel settings
+    // ...
+
+    // Add any additional settings for the multi-browse carousel
+  };
+
+  const heroSettings = {
+    // Hero carousel settings
+    // ...
+
+    // Add any additional settings for the hero carousel
+  };
 
   const slickRef = useRef(null);
 
@@ -77,6 +90,8 @@ function ImageSlider({ data, setCurrentIndex }) {
                 {p?.images?.map((i, index) => {
                   return (
                       <div className=" group relative overflow-hidden shadow-xl shadow-black rounded-[1rem] border-[1px] border-slate-500 "
+                      data-aos="flip-right"
+                      data-aos-duration="1500"
                     >
                       <img 
                         key={index}
@@ -87,17 +102,8 @@ function ImageSlider({ data, setCurrentIndex }) {
             onClick={() => handleImageClick(index)}
                         
                       />
-                     {/* {selectedImage !== null && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center">
-          <div className="absolute inset-0 bg-black opacity-75"></div>
-          <div className="z-50 bg-white p-4 rounded-lg">
-            <img src={images[selectedImage]} alt={`Popup Image ${selectedImage}`} />
-            <button className="mt-2 py-1 px-2 bg-gray-300 hover:bg-gray-400 rounded-md" onClick={closePopup}>
-              Close
-            </button>
-          </div>
-        </div> */}
-      {/* )} */}
+                 
+      
                       <div className=" absolute z-[1000]  top-[50%] left-[50%] translate-x-[-50%] ">
                         <h1 className="text-white text-xl font-display hidden group-hover:block text-center ">{i?.title}</h1>
                         <p className="text-md font-light text-center font-display text-white hidden group-hover:block">{i?.description}</p>
@@ -111,64 +117,6 @@ function ImageSlider({ data, setCurrentIndex }) {
           );
         })}
 
-        {/* <div className="rounded-xl border-gray-300">
-          <div className="grid grid-cols-3 gap-3">
-            <img
-              className="h-[25rem] w-[100%] aspect-square rounded-xl object-cover"
-              src={images}
-              alt=""
-            />
-            <img
-              className="h-[25rem] w-[100%] rounded-xl"
-              src={images}
-              alt=""
-            />
-            <img
-              className="h-[25rem] w-[100%] rounded-xl"
-              src={images}
-              alt=""
-            />
-            <img
-              className="h-[25rem] w-[100%] rounded-xl"
-              src={images}
-              alt=""
-            />
-          </div>
-        </div> */}
-
-        {/* <div className="rounded-xl border-gray-300">
-          <div className="grid grid-cols-3 gap-3">
-            <img
-              className="h-[25rem] w-[100%] aspect-square rounded-xl object-cover"
-              src={images}
-              alt=""
-            />
-            <img
-              className="h-[25rem] w-[100%] rounded-xl"
-              src={images}
-              alt=""
-            />
-            <img
-              className="h-[25rem] w-[100%] rounded-xl"
-              src={images}
-              alt=""
-            />
-            <img
-              className="h-[25rem] w-[100%] rounded-xl"
-              src={images}
-              alt=""
-            />
-          </div>
-        </div> */}
-        {/* <div className="rounded-xl">
-        <img className='h-[30rem] w-[100%] rounded-xl' src={image} alt="" />
-      </div>
-      <div className="rounded-xl">
-        <img className='h-[30rem] w-[100%] rounded-xl' src={sliderimages} alt="" />
-      </div>
-      <div className="rounded-xl">
-        <img className='h-[30rem] w-[100%] rounded-xl' src={bandimage} alt="" />
-      </div> */}
       </Slider>
     </div>
   );

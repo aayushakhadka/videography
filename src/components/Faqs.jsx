@@ -13,7 +13,7 @@ export const Faqs = () => {
     <div id="faqs">
       <div className=" bg-gray-100">
         <Layout style={{ height: "fit-content" }}>
-          <h1 className="text-5xl font-display pt-[6rem]"
+          <h1 className="text-5xl font-display pt-[4rem]"
           >FAQS</h1>
           <div className="border-2 border-red-700 w-[5%] mb-12"></div>
           

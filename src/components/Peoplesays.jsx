@@ -99,7 +99,7 @@ export const Peoplesays = () => {
   return (
     <div id="peoplesays" ref={showDivRef}>
       {/* headings */}
-      <div className="bg-zinc-800 pt-[4rem] flex flex-col items-center  pb-[3rem] min-h-screen">
+      <div className="bg-zinc-800 pt-[4rem] flex flex-col items-center pb-[3rem] min-h-screen">
         <Layout style={{ height: "fit-content" }}>
           <h1 className="text-white font-medium text-5xl font-display tracking-tighter mobileS:pt-[3rem] tablet:pt-[0]"
           >
