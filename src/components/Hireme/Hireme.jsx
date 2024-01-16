@@ -78,7 +78,7 @@ export const Hireme = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
+   
   return (
     <div id="hireme" >
       <div className="bg-image bg-cover bg-opacity-30">
@@ -119,15 +119,18 @@ export const Hireme = () => {
 
         {/* TODO: form part */}
         <div className="flex-[1] max-w-lg">
-          <div className="tablet:mt-[4rem] mobileS:mt-[2rem] flex flex-[1] max-h-[50rem] flex-col bg-gray-50 gap-2 rounded-2xl p-5 pb-[2rem] shadow-md flex-wrap">
-            <h1 className="text-black font-custom text-3xl pt-[1rem] font-display">
+          <div className="tablet:mt-[4rem] mobileS:mt-[2rem] flex flex-[1] max-h-[50rem] flex-col gap-3 rounded-2xl p-5 pb-[2rem] shadow-md flex-wrap"
+         >
+            <h1 className="text-white font-custom text-3xl pt-[1rem] font-display">
               Hello Friends!
             </h1>
-            <p className="pb-[1rem] font-display">
+            <p className="pb-[1rem] font-display text-white">
               Enter your details and start your journey with us
             </p>
-              <input
-                className="h-[3rem] border-[1px] border-gray-300 rounded-[1rem] pl-[1rem] bg-gray-300 bg-opacity-30 text-left pt-[] shadow-md"
+                    <input
+                // className="h-[3rem] border-[1px] border-gray-300 rounded-[1rem] pl-[1rem] bg-gray-300 bg-opacity-30 text-left pt-[] shadow-md"
+                className="border-b-2 border-slate-100 focus:outline-none focus:border-slate-100 bg-transparent text-white pt-[2rem] font-display p-3"
+               
                 type="text"
                 placeholder="Name"
                 name="name"
@@ -142,7 +145,8 @@ export const Hireme = () => {
 
 
               <input
-                className="h-[3rem] border-[1px] border-gray-300 rounded-[1rem] pl-[1rem] bg-gray-300 mt-[0.5rem] bg-opacity-30 shadow-md "
+                // className="h-[3rem] border-[1px] border-gray-300 rounded-[1rem] pl-[1rem] bg-gray-300 mt-[0.5rem] bg-opacity-30 shadow-md "
+                className="border-b-2 border-slate-100 focus:outline-none focus:border-slate-100 bg-transparent text-white pt-[2rem] font-display p-3" 
                 type="text"
                 placeholder="Email"
                 name="email"
@@ -169,27 +173,32 @@ export const Hireme = () => {
                 </span>
               )} */}
               <input
-                className="h-[10rem] border-[1px] border-gray-300 rounded-[1rem] pl-[1rem] bg-gray-300  pb-[7rem] mt-[0.5rem] bg-opacity-30 shadow-md "
-                type="text"
+                className="h-[10rem] border-[1px] border-gray-300 rounded pl-[1rem] pb-[7rem] mt-[0.5rem] shadow-md bg-transparent font-display text-white "
+                type="message"
                 placeholder="Message"
                 onChange={handleChange}
                 value={formData.message}
                 name="message"
+                // className="border-b-2 border-slate-100 focus:outline-none focus:border-slate-100 bg-transparent h-[10rem] pb-[8rem] pt-[2rem] text-white font-display p-3 tracking-wide bg-" 
+
               />
               {errors.message && (
-                <span className="text-red-600 font-display text-sm text-[0.7rem]">
+                <span className="text-red-600 font-display text-[0.7rem]">
                   {errors.message}
                 </span>
               )}
 
-              <button
+{/* <button
                 onClick={validateForm}
-                className="bg-black text-white h-[3rem] mt-[1rem] rounded-[1rem] font-display"
+                className=" bg-slate-100 h-[3rem] mt-[1.5rem] font-display max-w-[10rem] hover:opacity-30"
               >
                 Send Us
-              </button>
-              
+              </button> */}
+                <button  onClick={validateForm} className=" relative overflow-hidden mt-[1.5rem] bg-slate-200 text-black h-[3rem] py-2 rounded-md shadow-md shadow-black focus:outline-none transition-all duration-300 hover:opacity-70">
+      <span className="relative z-10 font-display text-lg">Send Me</span>
+    </button>
           </div>
+         
          
         </div>
        
@@ -206,28 +215,27 @@ export const Hireme = () => {
       
 
       <div className="mobilexl:flex tablet:flex-row mobileS:flex-col items-center justify-between mobileL:w-[80%] tablet:w-[80%] mx-auto min-h-[4rem] mobileS:pb-[5rem] tablet:pb-[0rem] font-display">
-        <p className="text-black min-w-[25rem] flex items-center gap-3 mobileS:pl-[1rem] mobileM:pl-[3rem] tablet:pl-[0rem]">
+        <p className="text-black min-w-[25rem] flex items-center gap-2 mobileS:pl-[1rem] mobileM:pl-[3rem] tablet:pl-[0rem]">
           Designed & Developed By
           <a className=" " target="_blank" href="https://apptechnologies.co/">
-            <span className=" text-cyan-600 tracking-wide">
-              
-              App Technologies
+            <span className=" text-cyan-700 tracking-wide">
+            APP TECHNOLOGIES
             </span>
           </a>
         </p>
 
         <div className="flex items-center justify-center relative gap-3">
-          <span className="bg-cyan-600 rounded-full h-[2.5rem] w-[2.5rem]">
+          <span className="bg-cyan-700 rounded-full h-[2.5rem] w-[2.5rem]">
             <a target="_blank" href="https://www.facebook.com/apptechnologies1">
               <FaFacebookF className=" flex items-center translate-x-3 translate-y-3 text-white" />
             </a>
           </span>
-          <span className="bg-cyan-600 rounded-full h-[2.5rem] w-[2.5rem] ">
+          <span className=" bg-cyan-700 rounded-full h-[2.5rem] w-[2.5rem] ">
             <a target="_blank" href="https://twitter.com/AppTechnologies">
               <FaTwitter className=" flex items-center translate-x-3 translate-y-3 text-white " />
             </a>
           </span>
-          <span className="bg-cyan-600 rounded-full h-[2.5rem] w-[2.5rem] ">
+          <span className="bg-cyan-700 rounded-full h-[2.5rem] w-[2.5rem] ">
             <a
               target="_blank"
               href="https://www.instagram.com/apptechnologies1/"
@@ -235,7 +243,7 @@ export const Hireme = () => {
               <FaInstagram className=" flex items-center translate-x-3 translate-y-3 text-white " />
             </a>
           </span>
-          <span className="bg-cyan-600 rounded-full h-[2.5rem] w-[2.5rem]">
+          <span className="bg-cyan-700 rounded-full h-[2.5rem] w-[2.5rem]">
             <a
               target="_blank"
               href="https://www.linkedin.com/company/app-technologies-pvt-ltd/"

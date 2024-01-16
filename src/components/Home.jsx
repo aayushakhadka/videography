@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <div id="home">
       <div class="  mobileS:bg-camera laptop1:bg-none bg-cover bg-top min-h-screen w-[full] overflow-hidden ">
-        <div className="bg-black h-[100vh] laptop1:opacity-100 laptop1:h-[10rem] mobileS:opacity-70 ">
+        <div className="bg-black h-[100vh] laptop1:bg-opacity-100 laptop1:h-[10rem] mobileS:bg-opacity-70 ">
           <div className="w-full">
             <video
               autoPlay
@@ -54,12 +54,12 @@ export const Home = () => {
                   >
                     VIDEOGRAPHER
                   </h1>
-                  <p className="text-white text-5xl pt-[3rem] font-custom leading-15 max-w-[30rem] pb-[2rem]">
+                  <p className="text-white text-5xl pt-[3rem] font-custom leading-[4rem] max-w-[30rem] pb-[2rem]">
                     A good ending is the most important
                   </p>
                   <div className="flex gap-10 mobileS:pt-[1rem] mobileS:flex-col mobileM:flex-row mobileM:pt-[3rem]">
                     <a href={"#projects"}>
-                      <button className="bg-white border-zinc-700 text-black border-[1px] h-[3rem] w-[10rem] font-display hover:bg-transparent hover:text-white"
+                      <button className="bg-white text-black border-[2px] rounded-md h-[3rem] w-[10rem] font-display hover:bg-transparent hover:text-white hover:border-gray-300"
                       >
                         VIEW PROJECTS
                       </button>
@@ -68,7 +68,7 @@ export const Home = () => {
                      
                       href={"#hireme"}
                     >
-                      <button className="text-white border-[1px] border-zinc-700 h-[3rem] w-[10rem] font-display hover:bg-white hover:text-black"
+                      <button className="text-white border-[2px] border-gray-300 h-[3rem] w-[10rem] font-display hover:bg-white hover:text-black rounded-md hover:border-[2px]"
                        >
                         HIRE ME
                       </button>

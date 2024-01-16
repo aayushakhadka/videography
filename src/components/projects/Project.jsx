@@ -25,9 +25,10 @@ export const Project = (props) => {
       <div>
         <div className=" bg-zinc-900 w-full overflow-hidden max-h-100vh">
           <Layout style={{ height: "fit-content" }}>
-            <div className="flex  flex-col">
+            <div className="grid columns-3">
               <div className="flex flex-col ">
-                <h1 className="text-white text-5xl font-display tracking-tighter pt-[4rem] ">
+                <h1 className="text-white text-5xl font-display tracking-tighter pt-[4rem] " 
+                >
                   {projectSlider[currentIndex].title}
                 </h1>
                 <div className="border-2 border-red-700 w-[7%]"></div>

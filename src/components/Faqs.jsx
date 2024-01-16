@@ -13,21 +13,25 @@ export const Faqs = () => {
     <div id="faqs">
       <div className=" bg-gray-100">
         <Layout style={{ height: "fit-content" }}>
-          <h1 className="text-5xl font-display pt-[4rem]">FAQS</h1>
+          <h1 className="text-5xl font-display pt-[6rem]"
+          >FAQS</h1>
           <div className="border-2 border-red-700 w-[5%] mb-12"></div>
-          <div className="pb-[4rem]">
+          
+          <div className="pb-[4rem]"
+          >
             {faqs.map((faq, index) => (
+              <>              <hr className="border border-gray-200"></hr>
               <div
-                className="flex flex-col gap-6 font-display cursor-pointer"
-                data-aos="fade-right"
-                data-aos-duration="1500"
+                className="flex flex-col gap-6 font-display cursor-pointer shadow-md shadow-gray-400  "
+                
+               
               >
                 <div
                   key={index}
-                  className="border border-gray-300 rounded-md mb-4 p-5 pt-4 shadow-md  "
+                  className="mb-4 px-3 pt-4 "
                 >
                   <div
-                    className="flex justify-between items-center px-4 pt-2 rounded-[1rem]"
+                    className="flex justify-between items-center px-4 pt-2 "
                     onClick={() => handleClick(index)}
                   >
                     <h2 className="text-lg font-display font-semibold">
@@ -45,7 +49,11 @@ export const Faqs = () => {
                   )}
                 </div>
               </div>
+              </>
+
             ))}
+              <hr className="border-[1px] border-gray-200 "></hr>
+
           </div>
         </Layout>
       </div>
