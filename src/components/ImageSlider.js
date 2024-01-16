@@ -99,7 +99,7 @@ function ImageSlider({ data, setCurrentIndex }) {
         </div> */}
       {/* )} */}
                       <div className=" absolute z-[1000]  top-[50%] left-[50%] translate-x-[-50%] ">
-                        <h1 className="text-white text-2xl font-display hidden group-hover:block ">{i?.title}</h1>
+                        <h1 className="text-white text-xl font-display hidden group-hover:block text-center ">{i?.title}</h1>
                         <p className="text-md font-light text-center font-display text-white hidden group-hover:block">{i?.description}</p>
                       </div>
                       </div>

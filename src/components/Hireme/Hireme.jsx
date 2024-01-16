@@ -50,13 +50,6 @@ export const Hireme = () => {
       newErrors.message = "required your message*";
       valid = false;
     }
-    setFormData({    
-        name: "",
-      email: "",
-      password: "",
-      message: "",
-    }
-    )
     
     setErrors(newErrors);
     return valid;
@@ -223,7 +216,7 @@ export const Hireme = () => {
       </div> 
       
 
-      <div className="mobilexl:flex tablet:flex-row mobileS:flex-col items-center justify-between mobileL:w-[80%] tablet:w-[80%] mx-auto min-h-[4rem] mobileS:pb-[5rem] tablet:pb-[0rem] font-display">
+      <div className="mobilexl:flex tablet:flex-row mobileS:flex-col items-center justify-between mobileL:w-[85%] mobileL:mx-auto tablet:w-[80%] tablet:mx-auto min-h-[4rem] mobileS:pb-[5rem] tablet:pb-[0rem] font-display">
         <p className="text-black min-w-[25rem] flex items-center gap-2 mobileS:pl-[1rem] mobileM:pl-[3rem] tablet:pl-[0rem]">
           Designed & Developed By
           <a className=" " target="_blank" href="https://apptechnologies.co/">

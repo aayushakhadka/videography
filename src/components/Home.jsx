@@ -8,7 +8,7 @@ import videographer from "../videos/videographer.mp4";
 export const Home = () => {
   return (
     <div id="home">
-      <div class="  mobileS:bg-camera laptop1:bg-none bg-cover bg-top min-h-screen w-[full] overflow-hidden ">
+      <div class="  mobileS:bg-camera laptop1:bg-none bg-cover bg-top h-[100vh] w-[full] overflow-hidden ">
         <div className="bg-black h-[100vh] laptop1:bg-opacity-100 laptop1:h-[10rem] mobileS:bg-opacity-70 ">
           <div className="w-full">
             <video
@@ -54,12 +54,12 @@ export const Home = () => {
                   >
                     VIDEOGRAPHER
                   </h1>
-                  <p className="text-white text-5xl pt-[3rem] font-custom leading-[4rem] max-w-[30rem] pb-[2rem]">
+                  <p className="text-white text-5xl mobileM:pt-[3rem] mobileS:pt-[2rem] font-custom mobileM:leading-[4rem] mobileS:leadding-[3rem] max-w-[30rem] pb-[2rem]">
                     A good ending is the most important
                   </p>
-                  <div className="flex gap-10 mobileS:pt-[1rem] mobileS:flex-col mobileM:flex-row mobileM:pt-[3rem]">
+                  <div className="flex gap-10 mobileS:flex-col mobileM:flex-row mobileM:pt-[3rem] mobileS:pt-5">
                     <a href={"#projects"}>
-                      <button className="bg-white text-black border-[2px] rounded-md h-[3rem] w-[10rem] font-display hover:bg-transparent hover:text-white hover:border-gray-300"
+                      <button className="bg-white text-black border-[2px]  rounded-md h-[3rem] w-[10rem] font-display hover:bg-transparent hover:text-white hover:border-gray-300"
                       >
                         VIEW PROJECTS
                       </button>

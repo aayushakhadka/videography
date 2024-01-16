@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     screens: {
       // hideNav: { max: "600px" },
-      mobileS: { amx: "320px" },
+      mobileS:"320px",
       mobileM: "375px",
       mobileL: "425px",
-      mobilexl:'585px',
+      mobilexl:'502px',
       tablet: "768px",
       laptop1: "1024px",
       laptop: "1440px",

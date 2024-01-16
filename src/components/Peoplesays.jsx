@@ -115,7 +115,7 @@ export const Peoplesays = () => {
           {/* peoplesays content */}
           {/* <Slider {...settings}> */}
           {/* {isVisible && ( */}
-          <div className="grid laptop1:grid-cols-3 mobileS:grid-cols-1 tablet:grid-cols-2 ">
+          <div className="grid laptop1:grid-cols-3 mobileS:grid-cols-1 tablet:grid-cols-2 justify-self-center">
             {peoplesays?.map((p, index) => {
               return (
                 <div key={index} data-aos="zoom-in" data-aos-duration="1000">

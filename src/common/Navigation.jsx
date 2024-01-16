@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Navigation = () => {
   return (
-    <div className='tablet:hidden mobileS:flex h-[4rem] gap-10 bg-red-700 bottom-[0%] fixed z-50 navHide:hidden'>
+    <div className='tablet:hidden mobileS:flex h-[4rem] gap-10 bg-red-700 bottom-[0%] fixed z-50 navHide:hidden '>
         <div className='bg-black w-screen opacity-70 h-[4rem] flex items-center justify-center gap-14  mobileS:gap-7'>
           <a href='#home'>     
              <h1 className='text-white tracking-[1px] text-xl  '>Home</h1>
