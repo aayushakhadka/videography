@@ -22,6 +22,7 @@ export const Hireme = () => {
   const validateForm = () => {
     let valid = true;
     const newErrors = {};
+   
     if (!formData.name || formData.confirmname) {
       newErrors.name = "required your name*";
       valid = false;
@@ -49,6 +50,14 @@ export const Hireme = () => {
       newErrors.message = "required your message*";
       valid = false;
     }
+    setFormData({    
+        name: "",
+      email: "",
+      password: "",
+      message: "",
+    }
+    )
+    
     setErrors(newErrors);
     return valid;
   };
