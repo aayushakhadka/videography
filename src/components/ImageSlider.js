@@ -85,17 +85,17 @@ function ImageSlider({ data, setCurrentIndex }) {
         {data.map((p, index) => {
           return (
             <div key={index} className="border-gray-300 pb-[4rem]">
-              <div className="grid tablet:grid-cols-3 mobileL:grid-cols-2 gap-4 ml-[1rem] mr-[1rem] relative "
+              <div className="grid tablet:grid-cols-3 mobileL:grid-cols-2 gap-4 ml-[1rem] mr-[1rem] relative  "
               >
                 {p?.images?.map((i, index) => {
                   return (
-                      <div className=" group relative overflow-hidden shadow-xl shadow-black rounded-[1rem] border-[1px] border-slate-500 "
+                      <div className=" group relative overflow-hidden shadow-xl shadow-black rounded-[1rem] border-[2px] border-slate-500 hover:border-white hover:bg-cover "
                       data-aos="flip-right"
                       data-aos-duration="1500"
                     >
                       <img 
                         key={index}
-                        className="max-h-[23rem] w-full aspect-square object-cover rounded-[1rem] group-hover:scale-125 duration-200 group-hover:rotate-12 group-hover:opacity-80 group-hover  "
+                        className="max-h-[23.5rem] w-full aspect-square object-cover rounded-[1rem] scale-100 group-hover:scale-125 duration-200 group-hover:opacity-80 group-hover"
                        
                         src={i?.img}
                    alt={`Image ${index}`}
