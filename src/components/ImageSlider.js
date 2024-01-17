@@ -89,19 +89,20 @@ function ImageSlider({ data, setCurrentIndex }) {
               >
                 {p?.images?.map((i, index) => {
                   return (
-                      <div className=" group relative overflow-hidden shadow-xl shadow-black rounded-[1rem] border-[2px] border-slate-500 hover:border-white hover:bg-cover "
-                      data-aos="flip-right"
-                      data-aos-duration="1500"
+                      <div className=" group relative overflow-hidden shadow-xl shadow-black rounded-[1rem] border-[3px] border-slate-500 hover:border-white hover:bg-cover "
+                     data-aos='flip-right'
+                     data-aos-duration='1500'
                     >
                       <img 
                         key={index}
-                        className="max-h-[23.5rem] w-full aspect-square object-cover rounded-[1rem] scale-100 group-hover:scale-125 duration-200 group-hover:opacity-80 group-hover"
+                        className="max-h-[24rem] w-full aspect-square object-cover scale-100 group-hover:scale-150 duration-500 group-hover:"
                        
                         src={i?.img}
                    alt={`Image ${index}`}
             onClick={() => handleImageClick(index)}
                         
                       />
+                      <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40"></div>
                  
       
                       <div className=" absolute z-[1000]  top-[50%] left-[50%] translate-x-[-50%] ">

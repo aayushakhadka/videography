@@ -120,7 +120,7 @@ export const Peoplesays = () => {
               return (
                 <div key={index} data-aos="zoom-in" data-aos-duration="1000">
                   {/* <div className=" grid mobileL:pl-[2rem] laptop:pl-[0] mobileS:items-center mobileS:justify-center laptop1:grid-cols-3  mobileS:grid-cols-1 tablet:grid-cols-2 tablet:gap-[1.5rem] laptop1:gap-4 pb-[4rem]"> */}
-                  <div className="flex flex-col items-center justify-center mt-[5rem] ml-[1rem] relative border-[2px] border-gray-300 rounded-[1rem] shadow-lg shadow-black">
+                  <div className="flex flex-col items-center justify-center mt-[5rem] ml-[1rem] relative border-[3px] border-white rounded-[1rem] shadow-lg shadow-black">
                     {/* <img
                       className="h-[5rem] w-[5rem] absolute z-[1000] top-[-2.5rem] border-[2px] border-gray-300 rounded-full"
                       src={p?.profile}
@@ -142,7 +142,7 @@ export const Peoplesays = () => {
                     <iframe
                       width="100%"
                       height="315"
-                      className="rounded-[1rem]"
+                      className="rounded-[1rem] "
                       src={p?.src}
                       title="YouTube video player"
                       frameborder="0"
