@@ -21,8 +21,8 @@ export const Faqs = () => {
           <div className="pb-[4rem]"
           >
             {faqs.map((faq, index) => (
-             <div className=" shadow-gray-400 shadow-md mb-4 bg-gray-100">
-              <hr className="border-[1px] bg-gray-300"></hr>
+             <div className=" shadow-gray-400 shadow-md mb-4 bg-gray-100 border-[1px] border-gray-300 rounded-[0.5rem]">
+              {/* <hr className="border-[1px] bg-gray-300"></hr> */}
              <Accordian
              key={index}
              question={faq?.question}
@@ -30,7 +30,7 @@ export const Faqs = () => {
              isOpen={activeIndex === index}
              onClick={() => handleItemClick(index)}
             />
-              <hr className="border-[1px] bg-gray-700"></hr>
+              {/* <hr className="border-[1px] bg-gray-700"></hr> */}
 
           </div>
 

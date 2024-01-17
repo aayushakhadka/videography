@@ -15,7 +15,7 @@ export const Accordian = ({ question, answer, isOpen, onClick }) => {
              ? { height: contentHeight.current.scrollHeight }
              : { height: "0px" }
             }>
-         <p className="answer-content font-display text-md">{answer}</p>
+         <p className="answer-content font-display text-md pb-3">{answer}</p>
         </div>
       </div>
   )

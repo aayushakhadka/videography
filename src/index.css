@@ -92,7 +92,7 @@ body {
 
 .wrapper .answer-container {
   padding: 0 1rem;
-  transition: height .7s ease-in-out;
+  transition: height .5s ease-in-out;
 }
 
 .wrapper .answer-content {
