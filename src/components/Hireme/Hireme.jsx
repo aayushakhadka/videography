@@ -50,6 +50,12 @@ export const Hireme = () => {
       newErrors.message = "required your message*";
       valid = false;
     }
+    setFormData({
+      name: "",
+      email: "",
+      password: "",
+      message: "",
+    })
     
     setErrors(newErrors);
     return valid;

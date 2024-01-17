@@ -22,7 +22,7 @@ export const Faqs = () => {
             {faqs.map((faq, index) => (
               <>              <hr className="border border-gray-200"></hr>
               <div
-                className="flex flex-col gap-6 font-display cursor-pointer shadow-md shadow-gray-400  "
+                className="flex flex-col gap-6 font-display cursor-pointer shadow-md shadow-gray-500  "
                 
                
               >
